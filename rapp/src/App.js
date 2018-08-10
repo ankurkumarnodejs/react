@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './component/header';
+import Main from './component/main';
+import UserDetail from './container/userDetail';
+import AddUser from './container/addUser';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <AddUser />
+        <Main />
+        <UserDetail />
       </div>
     );
   }
